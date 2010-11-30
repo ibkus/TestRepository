@@ -1,0 +1,13 @@
+[user]
+	name = Bohumil Kus
+	email = Bohumil.Kus@teleca.com
+[alias]
+	show-graph = log --graph --abbrev-commit --pretty=oneline
+	show-graph-topo = log --graph --pretty=format:'%h : %s' --topo-order
+	show-graph-date = log --graph --pretty=format:'%h : %s' --date-order
+	lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset' --abbrev-commit --date=relative
+	wipe = "!git reset --hard;git clean -fd"
+[color]
+	ui = auto
+[core]
+	editor = nano -Y patch
